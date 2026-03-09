@@ -23,7 +23,7 @@ We need to face two different challenges:
 	- multiple access protocol coordinate the link access
 	- various transmission rates, distances and frequency bands
 ## 2.2 Characteristics of different wireless links
-Different wireless Links have different characteristics, link bandwidth and range:![[Pasted image 20251128120618.png]]
+Different wireless Links have different characteristics, link bandwidth and range:
 - WiFi is the commercial name for the 802.11 technology
 - Bluetooth is the commercial name for the 802.15.1 technology: short range, low energy, "high" (lol) bandwidth
 	- 802.15.4 is short range, low energy and low bandwidth
@@ -143,8 +143,6 @@ The solution is: the sender reserves a channel for data frames using *small rese
 2. the AP broadcast a **Clear-To-Send** (**RTS**) packet in response to the RTS
 3. the CTS is hear by all nodes: the sender transmits the data frame and the other stations defer transmissions
 ### 3.2.5 the 802.11 Frame (7.3.3)
-> the 802.11 Frame: ![[802.11_frame.svg | 700]]
-
 - address 1: MAC address of the wireless host or AP to *receive* this frame
 - address 2: MAC address of the wireless host or AP *transmitting* this frame
 - address 3: MAC address of the *router interface* to which the AP is attached

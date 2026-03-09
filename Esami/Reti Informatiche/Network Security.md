@@ -19,7 +19,6 @@ Trudy can:
 - hijacking: take over an ongoing connection by taking the place of either the sender or the receiver
 - denial of service: prevent the service from being used by others, for example by overloading resources
 # 2 Principles of cryptography (8.2)
-See [[Crittografia]].
 ## 2.1 Language of cryptography
 Alice's plaintext gets encrypted by a encryption algorithm using Alice's encryption key. The ciphertext travels through the channel and gets delivered to Bob, then gets decrypted into plaintext by a decryption algorithm using Bob's decryption key.
 $$

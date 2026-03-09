@@ -116,7 +116,7 @@ Packets are forwarded using the destination of the host address.
 | ...                                                                                   | ...            |
 | otherwise                                                                             | 3              |
 
-- TTL: [[Test di Connettività#Traceroute]]
+- TTL: Test di Connettività
 ### 5.1.2 Connection
 - a virtual circuit is preliminarily established
 - all packets follow the same path
