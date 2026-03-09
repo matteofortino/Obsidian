@@ -11,14 +11,14 @@
       "query": "#uni",
       "color": {
         "a": 1,
-        "rgb": 5431413
+        "rgb": 14725458
       }
     },
     {
       "query": "#seminar",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 5431413
       }
     }
   ],
@@ -32,6 +32,6 @@
   "repelStrength": 9.91048177083333,
   "linkStrength": 0.502115885416667,
   "linkDistance": 273,
-  "scale": 0.9420518503831373,
+  "scale": 0.7094834140149384,
   "close": true
 }
