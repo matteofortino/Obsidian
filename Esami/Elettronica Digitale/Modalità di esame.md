@@ -1,3 +1,4 @@
+#uni
 Prova scritta e Prova orale (minimo 15/30 a entrambe)
 Il superamento della prova scritta abilta al sostenimento della prova orale
 La prova scritta è valida per l'appello corrente e per i dui successivi (anche se in sessioni diverse)

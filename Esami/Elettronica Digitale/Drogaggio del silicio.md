@@ -1,3 +1,4 @@
+#uni
 Abbiamo visto i fenomeni di *generazione e ricombinazione termica* e la conducibilità del silicio $\sigma = nq\mu_n + pq\mu_p$.
 
 Facciamo un calcolo con dei dati reali:

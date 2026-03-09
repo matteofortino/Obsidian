@@ -1,3 +1,4 @@
+#uni
 # Conduzione
 Iniziamo parlando del fenomeno della conduzione attraverso un materiale metallico.
 Supponiamo di avere un parallelepipedo di sezione $S$ e di lunghezza $L$
