@@ -52,7 +52,7 @@ Poichè l'energia termica posseduta dai portatori è distribuita secondo la dist
 
 
 un immagine riassuntiva dei concetti
-![[Pasted image 20260310165639.png]]
+![[diagramma_densita_campo_elettrico_potenziale_giunzione.png]]
 Sfrutta le relazioni:
 - $\frac{dE}{dx} = -\frac{\rho(x)}{\epsilon}$
 - $E = -\frac{d\phi}{dx}$ 
