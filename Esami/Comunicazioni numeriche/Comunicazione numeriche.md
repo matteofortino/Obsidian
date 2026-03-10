@@ -16,6 +16,7 @@ Ci saranna anche elementi di:
 *Lezioni Sanguinetti:*
 [[Introduzione ai Sistemi di Comunicazione]]
 [[Introduzione ai segnali]]
+[[Potenza trasmessa e ricevuta in un sistema di comunicazione]]
 *Lezioni Andriolli:*
 [[Probailità]]
 
