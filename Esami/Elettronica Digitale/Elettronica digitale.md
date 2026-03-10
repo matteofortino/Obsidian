@@ -5,6 +5,7 @@
 [[Modalità di esame]]
 [[Basi fisiche dei dispositivi a semiconduttore]]
 [[Drogaggio del silicio]]
+[[Giunzione pn]]
 
 
 
