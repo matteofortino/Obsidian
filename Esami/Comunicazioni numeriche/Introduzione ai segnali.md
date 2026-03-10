@@ -56,3 +56,31 @@ Adesso estendiamola per un segnale qualunque $$ P_{xT} = \lim_{T \to \infty} \fr
 Da questa definizione osserviamo che:
 - Un segnale ad energia *finita* a potenza median *nulla*
 - Un segnale a potenza medina *finita* a energia *infinita*
+
+## Esponenziale monolatero
+Prendiamo come segnale di esempio $x(t) = e^{-\frac{t}{T}}u(t)$ 
+```desmos-graph
+left=-1; right=10;
+---
+y=e^{-x} | x >= 0
+```
+Questo segnale ha energia finita: $$ E_x = \int_0^{+\infty} e^{-\frac{2t}{T}}dt = \frac{T}{2}$$
+## Seno e Coseno
+Prendiamo dei segnali: $$
+\begin{cases}
+x(t) = A\sin(2\pi f_o t) \\
+y(t) = A\cos(2 \pi f_o t) \\
+x(t) = y(t - \frac{T_0}{4})
+\end{cases}
+$$
+Le funzioni periodiche hanno energia *infinita* e quindi potenza media *finita*.
+$$
+P_{\cos} = \frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} A^2cos^2(s \pi f_0 t) dt =  \frac{A^2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} \frac{1}{2} - \frac{cos(2s \pi f_0 t)}{2} dt = \frac{A^2}{2}
+$$
+Si dimostra lo stesso per il seno
+## Impulso rettangolare
+Consideriamo un segnale
+$$
+x(t) = \text{rect} \left (\frac{1}{T} \right)= \begin{cases} 1, |t| < \frac{T}{2} \\ \frac{1}{2}, |t| = \frac{T}{2} \\ 0, |t| > \frac{T}{2} \end{cases}
+$$
+si dimostra facilemnte che l'energia di questo segnale è pari a $T$.
