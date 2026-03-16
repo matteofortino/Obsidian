@@ -17,6 +17,10 @@ Ci saranna anche elementi di:
 [[Introduzione ai Sistemi di Comunicazione]]
 [[Introduzione ai segnali]]
 [[Potenza trasmessa e ricevuta in un sistema di comunicazione]]
+[[Trasformata in continua di Fourier]]
 *Lezioni Andriolli:*
 [[Probailità]]
+[[Calcolo combinatorio]]
+
+
 

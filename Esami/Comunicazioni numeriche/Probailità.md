@@ -92,5 +92,33 @@ Questa definizione assiomatica obbliga a specificare in modo corretto un *esperi
 - $S$ è una classe di sottoinsiemi di $\Omega$ detti *eventi* di cardinalità $2^M$
 - $P(\cdot)$ detta **probabiltà** definita sugli eventi di $S$ che associa ad ogni evento $A$ di $S$ un numero non negativo.
 
+# Probabiltà condizionata
+Prendiamo in esame in esperimento che coinvolge due eventi $A$ e $B$. Sia $P[A|B]$ la probabilità di $A$ dato che $B$ si è verificato.
+>[!Probabilità condizionata]
+>$$P[A|B] = \frac{P[A \cap B]}{P[B]}$$
+
+Abbiamo quindi definito un nuovo sistema di probabilità cambiandone la legge ma lasciando invariato lo spazio campione e la classe di eventi. Possiamo quindi verificare i precedenti assiomi:
+- *Normalizzazione*: $P[\Omega|B] = \frac{P[\Omega \cap B]}{P[B]} = 1$
+- *Non negatività*: $P[A \cap B] \geq 0$,  $P[B] \geq 0$ quindi $P[A|B] \geq 0$ 
+- *Additività*: dati $A_1 \cap A_2 = \emptyset$, $P[(A_1 \cup A_2) | B] = P[A_1 | B] + P[A_2 | B]$ 
+e definiano le seguenti proprietà: 
+- se $A \cap B = \emptyset$ allora $P[A|B] = 0$ 
+- se $A \subset B$ allora $A \cap B = A$ quindi $\frac{P[A]}{P[B]} \geq P[A]$ 
+- se $B \subset A$ allora $P[A|B] = 1$
+- 
+In termini di frequenza relativa possiamo dire che: 
+$$ P[A|B] = \frac{P[A \cap B]}{P[B]} = \frac{n_{A \cap B}}{n_b} $$
+
+dove $n_{A \cap B}$ è il numero di volte in cui si verificano entrambi gli eventi.
+
+# Teorema della probabiltà totale
+>[! Teorema della probabiltà totale]
+>dati $\{A_1, A_2, ..., A_k\}$ partizione di $\Omega$ tale che $\bigcup_{i = 1}^{k} A_i = \Omega$  e $A_i \cap A_j = \emptyset,\forall i \neq j$ allora $$ \begin{matrix} B = \bigcup_{i = 1}^{k} (B \cap A_i) \\ P[B] = \sum_{i = 1}^{k} P[B|A_i]\cdot P[A_i]\end{matrix} $$
+
+
+# Formula di Bayes
+>[!Formula di Bayes]
+>Noti $P[A|B], P[A], P[B]$ allora $$ P[B|A] = \frac{P[A|B] \cdot P[B]}{P[A]} $$
+se gli eventi sono indipendenti si ha che $$ P[B|A] = P[B] \Rightarrow P[A \cap B] = P[A] \cdot P[B]$$
 
 
