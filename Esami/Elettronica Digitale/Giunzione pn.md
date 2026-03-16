@@ -47,9 +47,10 @@ Notiamo che in questo caso sono gli elementi maggioritari dei rispettivi drogagg
 Poichè l'energia termica posseduta dai portatori è distribuita secondo la distrubuzione di Fermi-Dirac, la corrente avrà un andamento esponenziale rispetto alla tensione applicata.
 
 >[!Legge di Schockley]
->$$I = I_S\left ( e^{\frac{V}{\eta V_T}} -1 \right )$$
->Con $V_T = \frac{K_bT}{q}$, $\eta \in [1,2]$, $I_S \in [10^{-9}, 10^{-15}]A$ 
+>$$I_D = I_S\left ( e^{\frac{V_D}{\eta V_T}} -1 \right )$$
+>Con $V_T = \frac{K_bT}{q}$, $\eta \in [1,2]$, $I_S \in [10^{-9}, 10^{-15}]A$
 
+^leggeDiShockley
 
 un immagine riassuntiva dei concetti
 ![[diagramma_densita_campo_elettrico_potenziale_giunzione.png]]
