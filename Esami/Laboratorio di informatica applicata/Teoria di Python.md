@@ -172,3 +172,91 @@ for i, j in z:
 	print(f" number: {i}, letter: {j})
 
 ```
+
+
+# Decoratori
+Sono una potente feature che permettono di modificare il comportamento delle funzioni o dei metodi senza acmbiare il codice sorgente.
+Un decoratore è una funzione che prende come argomento un' altra funzione. Restituisce la funzione modificata
+```python
+def uppercase_decorator(func):
+	def wrapper:
+		original_result = func()
+		modified_result = original_result.upper()
+		return modified_result
+	return wrapper
+	
+```
+Un decoratoe può essere applicatato usando il carattere "@". 
+```python
+def uppercase_decorator(func):
+	def wrapper:
+		original_result = func()
+		modified_result = original_result.upper()
+		return modified_result
+	return wrapper
+	
+@uppercase_decorator
+def greet():
+	return "Hello!"	
+	
+print(greet()) # -> outpout: HELLO!
+```
+
+La sintassi vista è corretta per funzioni che non richedono argomenti. Vediamo adesso il caso in cui la funzione richede dei paramentri
+```python
+def uppercase_decorator(func):
+	def wrapper(*args, **kwargs):
+		original_result = func(*args, *kwargs)
+		modified_result = original_result.upper()
+		return modified_result
+	return wrapper
+	
+@uppercase_decorator
+def greet(name):
+	return f"Hello {name}!"	
+	
+print(greet("Matteo")) # -> outpout: HELLO, MATTEO!
+```
+Definisco quindi un decoratore genrico che prendi un numero di paramentri dinamico. 
+Un problema che si verica adesso è che il *metadati* della funzioni originali vengono persi, la funzione originale non può più essere acceduta. 
+```python
+import functools
+def uppercase_decorator(func):
+	@functools.wraps(func) #preserve metadata
+	def wrapper(*args, **kwargs):
+		original_result = func(*args, *kwargs)
+		modified_result = original_result.upper()
+		return modified_result
+	return wrapper
+	
+@uppercase_decorator
+def greet(name):
+	"""Funzione che ringrazia il nome passato"""
+	return f"Hello {name}!"	
+	
+print(greet("Matteo").__name__) # Output: greet (senza il wrap il nome sarebbe warpper)
+print(greet("Matteo").__doc__) # Output: Funzione che ringrazia il nome passato
+```
+
+Il decoratore a sua volta può accettare paramentri, questo si fa aggiungendo un terzo livello di indentazione. 
+```python
+def repeat(n=1):
+	def decorator(func):
+		@functools.wraps()
+		def wrapper(*args, **kwargs):
+			result = None
+			for _ in range(n):
+				result = func(*args, **kwargs)
+			return result 
+		return wrapper 
+	return decorator
+
+@repeat(n=3)
+def say_hello(name):
+	print(f"Hello, {name}!")b
+```
+
+# Yield From 
+Il comando *yeild from* permette di delegare delle azione ad un altro generatore.
+
+
