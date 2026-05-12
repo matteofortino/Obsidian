@@ -4,7 +4,7 @@ Un applicazione tipica dei diodi è quella della **rettificazione** della tensio
 # Circuiti di rettificazione
 # Rettificatore ideale
 Vediamo il circuito del *rettificatore ideale*:
-![[rettificatore_ideale.png]]
+![[rettificatore_ideale.png|489]]
 Notiamo due componenti fondamentali:
 - il *generatore di tensione*: descritto da una funzione sinusoidale $V_S = V_m\sin(\omega t), \quad \omega = 2 \pi f$
 - La resistenza $R_L$ detta resistenza di *carico*,(*load* in inglese). Rapprenseta l'applicazione effettiva che sfrutta il voltaggio rettificato.
