@@ -1,8 +1,5 @@
 ---
-id: Scheduling
-aliases: []
-tags: []
----
+# Algoritmi di scheduling
 -  #uni
 Attivita' mediante la quale il sistema operativo effetua delle scelte tra i processi con riguardo a: 
 - caricamento in memoria centrale
@@ -115,3 +112,4 @@ Algoritmo prioritario (*priorita' dinamica*) con permessi di revoca.
 Man mano che passa il tempo la deadline di un processo di avvinica quindi la priorita' di quel processo aumenta automaticamente.
 ![[edf.svg]]
 In questo esembio al tempo 8 la priorita' del processo Pb e' piu' alta quindi la sua eseguzione continua permettendogli di rispettare la deadline.s
+

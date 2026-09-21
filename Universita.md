@@ -12,12 +12,12 @@
 - [ ] Economia e Organizzazione Aziendale
 # Terzo Anno
 ## Primo semestre
-- [ ] [[Sistemi Operativi]]
+- [x] [[Sistemi Operativi]]
 - [ ] [[Reti Informatiche]]
-- [ ] [[Ingegneria del Sofware]]
+- [x] [[Ingegneria del Sofware]]
 ## Secondo Semestre
-- [ ] [[Elettronica digitale]] 
-- [ ] [[Progettazione di reti informatiche]] 
+- [x] [[Elettronica digitale]] 
+- [x] [[Progettazione di reti informatiche]] 
 - [ ] [[Laboratorio di informatica applicata]]
 - [ ] [[Comunicazione numeriche]]
 
